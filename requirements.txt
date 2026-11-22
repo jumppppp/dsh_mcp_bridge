@@ -1,0 +1,10 @@
+# Runtime dependencies (Python 3.10+)
+mcp>=1.29,<2
+flask>=3.0,<4
+httpx>=0.28,<1
+websockets>=11,<12
+uvicorn>=0.51,<1
+anyio>=4,<5
+
+# Optional: read session logs (system prompts) from zstd files
+zstandard>=0.21

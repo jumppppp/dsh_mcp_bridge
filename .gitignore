@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+dist/
+build/
+.venv/
+venv/
+
+# Runtime data (state DB, tokens, credentials, logs, backups)
+data/
+/logs/
+/workspace/
+
+# Local env / secrets
+.env
+.env.*
+*.token
+*.sqlite
+*.sqlite-*
+*.log
+*.jsonl
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

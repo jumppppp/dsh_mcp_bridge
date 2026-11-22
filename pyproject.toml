@@ -1,0 +1,26 @@
+[project]
+name = "dsh-mcp-bridge"
+version = "2.0.2"
+description = "Native DSH Web runtime adapter with classified MCP tools and a local control panel."
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.29,<2",
+    "flask>=3.0,<4",
+    "httpx>=0.28,<1",
+    "websockets>=11,<12",
+    "uvicorn>=0.51,<1",
+    "anyio>=4,<5",
+]
+
+[project.scripts]
+dsh-mcp-bridge = "libs.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["libs", "libs.*"]
+
+[tool.setuptools.package-data]
+libs = ["resources/skills/*/SKILL.md"]
